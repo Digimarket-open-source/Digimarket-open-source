@@ -5,6 +5,81 @@
 </br>
 </br>
 
+### Introduction:
+Welcome to our Digimarket project, designed specifically for kids! As the world continues to shift towards digital learning, it is more important than ever to provide high-quality educational resources that are both engaging and accessible. Our platform aims to do just that, offering a fun and interactive way for children to learn and grow from the comfort of their own homes while simulating the in-person classroom experience as much as possible.
+
+With our platform, organizations can collaborate with their all team members, parents and students in a private workspace and modify roles and responsibilities of each member as per their needs. From creating lessons to scheduling and using lesson’s content in interactive classrooms, every step can be handled through the platform.
+
+
+Through a combination of videos, games, quizzes, and other interactive activities, our platform provides a comprehensive educational experience that is tailored to the unique needs and interests of children. We believe that education should be accessible to all, regardless of background or location. That's why our platform is designed to be easily accessible from any device with an internet connection.
+
+
+### Objectives:
+1.	Providing facility for organizations to setup their own workspace.
+2.	Providing an interactive and engaging learning experience that is tailored to the needs and interests of kids.
+3.	Supporting the acquisition of knowledge and information in a fun and engaging way.
+4.	Enhancing student engagement and motivation through the interactive learning activities.
+5.	Supporting personalized learning by providing a variety of resources and tools to meet the diverse learning needs of students.
+6.	Providing teachers with a platform to monitor and assess student progress, and to provide feedback and support as needed.
+7.	Providing remote classrooms that simulate real classroom experience.
+8.	Design curriculum with all the supporting material that is required to be included in lessons
+9.	Managing offered courses of an organization
+10.	Creating, managing lesson schedules along with generating personal schedule for each user.
+
+
+### Design Principles:
+
+1.	User-Centered Design: Digimarket is designed with the needs and preferences of the target audience in mind.
+2.	Accessibility: The system will be accessible to users of all abilities and should comply with accessibility standards.
+3.	Consistency: The system will be designed with a consistent interface and navigation to provide a cohesive and user-friendly experience.
+ 
+4.	Simplicity: The system will be designed with a simple and intuitive interface to minimize confusion and cognitive overload.
+
+### Methodologies:
+
+1.	Agile Development: This system developed using an agile methodology that emphasizes collaboration, flexibility, and rapid iteration.
+2.	User Testing: This system tested with a group of representative users to identify usability issues and areas for improvement.
+3.	Iterative Design: The system designed iteratively, with frequent feedback from stakeholders to guide the development process.
+
+### Implementation:
+
+#### Software Components:
+The core component of Digimarket system, which manages, organizations, course content, course schedule, attendance, online classroom
+1.	Jitsi Meet:
+Used for live online classes, audio and video, screen sharing, whiteboard, and chat, which make it easier for teachers and students to collaborate and share information.
+
+2.	Socket.IO:
+It is often used for online classes because it allows for real-time communication between the teacher and students. Socket.IO is a library that enables bidirectional communication between a web browser and a server in real-time.
+In an online class setting, this means that the teacher can send real-time updates to the students' such as quizzes, or announcements. Socket.IO also allows for chat and messaging between students and the teacher, providing an interactive and collaborative learning experience.
+With Socket.IO, teachers can see in real-time how students are responding to their lessons, which helps them adjust their teaching style and materials as needed.
+
+
+#### Hardware Components:
+1.	Server Infrastructure:
+The server infrastructure of Digimarket on AWS (Amazon Web Services) typically consists of a combination of AWS services that provide the necessary computing and storage to run the system.
+•	Amazon EC2 (Elastic Compute Cloud): This service provides virtual servers (EC2 instances) that use to host the Digimarket Project. EC2 instances can be easily scaled up or down based on demand.
+ 
+•	Amazon S3 (Simple Storage Service): This service provides scalable and durable object storage for the Digimarket project, such as storing images and files.
+•	Amazon RDS (Relational Database Service): This service provides managed relational databases for the Digimarket project, such as MySQL which can be used to store and manage user’s data, course materials, and other information.
+
+
+#### List of libraries and frameworks:
+•	React.js library : Used for frontend development
+•	Material UI library : Used for styling react component
+•	Jitsi Meet : Used for online classroom
+•	Socket.IO: Used for real time communication between teacher and students.
+•	Node.js: Used for creating socket server.
+•	.Net framework : Used for backend development
+•	MySQL: Used for data management.
+
+#### Deployment and hosting requirements:
+•	Amazon EC2 service is used for virtual servers (EC2 instances) that deploy the Digimarket Project.
+•	Digimarket database use an AWS RDS (Relational Database Service). MySQL database is used for data management.
+•	Requirement of the current development install: CPU: Intel® Xeon ® CPU E5-2686 v4 @ 2.30GHz Memory: 4GB
+Storage: 32 GB
+Bandwidth: 500mb recommended connection speed.
+
+
 ## DigiMarket Setup on AWS EC2 instance 
 The following steps will help you install Digimarket on your EC2 instance. This assumes that you already have an EC2 instance running 
 and you can RDP into it. 
