@@ -122,4 +122,12 @@ export default {
 </configuration>
 ```
 
+7.	Create a new IIS site named `DigiMarketClientApp` with physical path set `C:\inetpub\wwwroot\clientApp` 
+8.	Set the bindings as follows:
+
+![image](https://user-images.githubusercontent.com/1287634/235751418-8eb921bb-c57d-4529-997e-842a61ff7819.png)
+
+9.	Ensure the client app is running by browsing to the EC2 public IP (Use your EC2 public IP) e.g. http://3.16.215.131/
+
+
 
