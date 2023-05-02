@@ -45,3 +45,81 @@ Pattern: (.*)
 
 ![image](https://user-images.githubusercontent.com/1287634/235749562-dbb7ba57-ddaa-40c8-b428-d85fdb57fd6b.png)
 
+Condition: HTTP_HOST 
+Condition Pattern: ^{your EC2 public IP}:4001$ as shown below
+
+![image](https://user-images.githubusercontent.com/1287634/235749989-f03f65eb-51d7-4e7d-8972-faf1b5bf6cd1.png)
+
+Rewrite URL:
+http://localhost:3001/{R:1}
+
+![image](https://user-images.githubusercontent.com/1287634/235750239-9673ce3d-36c1-4ec8-ba29-5d11509989e3.png)
+
+
+### MySQL Setup:
+1.	Download and install MySQL Community Edition along with MySQL Workbench https://dev.mysql.com/downloads/installer/
+2.	MySQL Workbench will assist in restoring the database backup dump
+3.	Restore the MySQL database dump which is located at following path at EC2 C:\Users\Administrator\Documents\dumps\Dump20230426\ Dump20230426.sql
+
+### IIS API Setup:
+
+1.	Publish the DigiMarketWebApi project, zip the published folder.
+2.	Upload the zip folder on EC2 server and unzip it at `C:\inetpub\wwwroot\Digimarketapi` on the EC2 server
+3.	Update the database connection string in appsettings.json file located at C:\inetpub\wwwroot\Digimarketapi. Open the appsettings.json file and then update the `defaultconnection` under `ConnectionStrings`.
+4.	Create a new site in IIS named Digimarketapi and set the physical path to `C:\inetpub\wwwroot\Digimarketapi` folder
+5.	Set the site bindings as follows:
+
+![image](https://user-images.githubusercontent.com/1287634/235750483-7ae14816-281c-4cea-bef4-35c6553dcb98.png)
+
+6.	Go to Application Pools under IIS Server node, and then open the advanced settings for Digimarketapi app pool
+
+![image](https://user-images.githubusercontent.com/1287634/235750558-c86b698a-09c2-4124-8e24-7c7504f7090a.png)
+
+7.	Set the .NET CLR Version to No Managed Code and set the Enable 32 bit Applications to true
+
+![image](https://user-images.githubusercontent.com/1287634/235750655-51bb9fc4-99db-45fd-86f7-bec52a74c7a0.png)
+
+8.	Ensure API is running by browsing to url http://localhost:81/swagger
+
+
+### IIS Client App Setup
+
+1.	On development machine, browse to ClientApp folder
+Open env.js file and update the API_URL, PORT, and SOCKET settings as per the environment. E.g. we updated these settings as follows:
+
+```js
+export default {
+  API_URL: "http://3.16.215.131",
+  PORT: 81,
+  SOCKET: "http://3.16.215.131:4001",
+};
+``` 	
+
+2.	Run `npm install` command to restore npm packages
+3.	Run `npm run build` command to publish the client app.
+4.	Once the build command is successful, zip the ClientApp/build folder and upload to EC2
+5.	Unzip the folder at location `C:\inetpub\wwwroot\clientApp`
+6.	Create a `web.config` file at `C:\inetpub\wwwroot\clientApp` and paste the following code:
+
+```xml
+<?xml version="1.0"?>
+<configuration>
+    <system.webServer>
+        <rewrite>
+            <rules>
+                <rule name="React Routes" stopProcessing="true">
+                    <match url=".*" />
+                    <conditions logicalGrouping="MatchAll">
+                        <add input="{REQUEST_FILENAME}" matchType="IsFile" negate="true" />
+                        <add input="{REQUEST_FILENAME}" matchType="IsDirectory" negate="true" />
+                        <add input="{REQUEST_URI}" pattern="^/(api)" negate="true" />
+                    </conditions>
+                    <action type="Rewrite" url="/" />
+                </rule>
+            </rules>
+        </rewrite>
+    </system.webServer>
+</configuration>
+```
+
+
