@@ -57,25 +57,35 @@ With Socket.IO, teachers can see in real-time how students are responding to the
 #### Hardware Components:
 1.	Server Infrastructure:
 The server infrastructure of Digimarket on AWS (Amazon Web Services) typically consists of a combination of AWS services that provide the necessary computing and storage to run the system.
-•	Amazon EC2 (Elastic Compute Cloud): This service provides virtual servers (EC2 instances) that use to host the Digimarket Project. EC2 instances can be easily scaled up or down based on demand.
+
+* Amazon EC2 (Elastic Compute Cloud): This service provides virtual servers (EC2 instances) that use to host the Digimarket Project. EC2 instances can be easily scaled up or down based on demand.
  
-•	Amazon S3 (Simple Storage Service): This service provides scalable and durable object storage for the Digimarket project, such as storing images and files.
-•	Amazon RDS (Relational Database Service): This service provides managed relational databases for the Digimarket project, such as MySQL which can be used to store and manage user’s data, course materials, and other information.
+* 	Amazon S3 (Simple Storage Service): This service provides scalable and durable object storage for the Digimarket project, such as storing images and files.
+* 	Amazon RDS (Relational Database Service): This service provides managed relational databases for the Digimarket project, such as MySQL which can be used to store and manage user’s data, course materials, and other information.
 
 
 #### List of libraries and frameworks:
-•	React.js library : Used for frontend development
-•	Material UI library : Used for styling react component
-•	Jitsi Meet : Used for online classroom
-•	Socket.IO: Used for real time communication between teacher and students.
-•	Node.js: Used for creating socket server.
-•	.Net framework : Used for backend development
-•	MySQL: Used for data management.
+*	React.js library : Used for frontend development 
+
+*	Material UI library : Used for styling react component
+
+*	Jitsi Meet : Used for online classroom
+
+*	Socket.IO: Used for real time communication between teacher and students.
+
+*	Node.js: Used for creating socket server.
+
+*	.Net framework : Used for backend development
+
+* 	MySQL: Used for data management.
 
 #### Deployment and hosting requirements:
-•	Amazon EC2 service is used for virtual servers (EC2 instances) that deploy the Digimarket Project.
-•	Digimarket database use an AWS RDS (Relational Database Service). MySQL database is used for data management.
-•	Requirement of the current development install: CPU: Intel® Xeon ® CPU E5-2686 v4 @ 2.30GHz Memory: 4GB
+*	Amazon EC2 service is used for virtual servers (EC2 instances) that deploy the Digimarket Project.
+
+*	Digimarket database use an AWS RDS (Relational Database Service). MySQL database is used for data management.
+
+*	Requirement of the current development install: CPU: Intel® Xeon ® CPU E5-2686 v4 @ 2.30GHz Memory: 4GB
+
 Storage: 32 GB
 Bandwidth: 500mb recommended connection speed.
 
