@@ -1,10 +1,14 @@
 # Digimarket
 <img src="https://user-images.githubusercontent.com/1287634/235761702-d32e6eb7-2df7-4a5f-81ee-55178d44d6c8.png" align="left" height="100" width="480"></img></br></br>
 
-Digimarket open source code
 
-## DigiMarket Setup on EC2
+</br>
+</br>
 
+## DigiMarket Setup on AWS EC2 instance 
+The following steps will help you install Digimarket on your EC2 instance. This assumes that you already have an EC2 instance running 
+and you can RDP into it. 
+ 
 ### `Socket.io` setup
 1.	Install Node on the EC2 server. Download the latest LTS version from https://nodejs.org/en/download. We used v18.16.0
 2.	Download the code from socket.io sample
