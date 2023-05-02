@@ -160,5 +160,9 @@ Follow these steps to allow ports 81 (for API) and 4001 (for socket)
 
 ![image](https://user-images.githubusercontent.com/1287634/235759402-236fb31a-c0a9-4420-9383-ad80777cdfa7.png)
 
+### Checking success
+If everything is successfull, you should be able to see and use the client app by accessing the public IP of your EC2 instance as shown below
+
+![image](https://user-images.githubusercontent.com/1287634/235764532-fd38e547-dd92-4e8d-98c3-3cc47f22c2bf.png)
 
 
