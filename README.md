@@ -129,5 +129,30 @@ export default {
 
 9.	Ensure the client app is running by browsing to the EC2 public IP (Use your EC2 public IP) e.g. http://3.16.215.131/
 
+### Firewall Allow Ports:
+Follow these steps to allow ports 81 (for API) and 4001 (for socket) 
+1.	Go to Windows Defender Firewall with Advanced Security 
+2.	Click Inbound rules and then click New
+3.	Select Port
+![image](https://user-images.githubusercontent.com/1287634/235758942-c4523b98-7709-4df8-af90-e345beab95d3.png)
+
+4.	Type in the port, then click next
+
+![image](https://user-images.githubusercontent.com/1287634/235759057-77b4c932-38fb-4d70-982e-cea781506d14.png)
+
+
+5.	Select Allow Connection 
+
+![image](https://user-images.githubusercontent.com/1287634/235759185-15bfd265-9b24-4114-a61c-01ed97fa4882.png)
+
+6. Leave all three checkboxes as checked
+
+![image](https://user-images.githubusercontent.com/1287634/235759297-c3ad585f-1f8f-410f-8b32-1a92c3d9ed9f.png)
+
+7. Specify the rule name and then click ok
+8. Ensure both rules are added with green tick mark which indicates connection is allowed on both these ports
+
+![image](https://user-images.githubusercontent.com/1287634/235759402-236fb31a-c0a9-4420-9383-ad80777cdfa7.png)
+
 
 
