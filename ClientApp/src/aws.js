@@ -1,12 +1,12 @@
 import AWS from 'aws-sdk'
 
-const S3_BUCKET = 'digimarketdev';
-const REGION = 'eu-central-1';
+const S3_BUCKET = '';
+const REGION = '';
 
 
 AWS.config.update({
-    accessKeyId: 'AKIATFZVF7FZFGXSDJRU',
-    secretAccessKey: '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'
+    accessKeyId: '',
+    secretAccessKey: ''
 })
 
 const myBucket = new AWS.S3({
