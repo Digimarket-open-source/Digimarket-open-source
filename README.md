@@ -150,9 +150,10 @@ http://localhost:3001/{R:1}
 ### MySQL Setup:
 1.	Download and install MySQL Community Edition along with MySQL Workbench https://dev.mysql.com/downloads/installer/
 2.	MySQL Workbench will assist in restoring the database backup dump
-3.	Restore the MySQL database dump which is located at following path at EC2 C:\Users\Administrator\Documents\dumps\Dump20230426\ Dump20230426.sql
+3.	Restore the MySQL database dump which is located at DbSchema/Dump.sql
 
 ### IIS API Setup:
+Please use Visual Studio WebDeply to create a pipeline or use below steps to manually deploy.
 
 1.	Publish the DigiMarketWebApi project, zip the published folder.
 2.	Upload the zip folder on EC2 server and unzip it at `C:\inetpub\wwwroot\Digimarketapi` on the EC2 server
