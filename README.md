@@ -1,5 +1,4 @@
-#</img> Digimarket project
-# <img src="http://3.16.215.131/static/media/Recurso_15.7cdbcd0d13f9ee14de38.png" height="150" width="150"></img> Digimarket1
+#Digimarket project
 <img src="https://user-images.githubusercontent.com/1287634/235761702-d32e6eb7-2df7-4a5f-81ee-55178d44d6c8.png" align="left" height="100" width="480"></img></br></br>
 
 
