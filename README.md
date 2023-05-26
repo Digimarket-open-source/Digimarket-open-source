@@ -5,12 +5,30 @@
 </br>
 </br>
 
+----------------------------------------------------------------------------------
+
 Project website: https://sites.google.com/kidslifeskills.org/digimarket-project-kls/home
 
-The project is composed of 3 repositories:
+----------------------------------------------------------------------------------
+
+The project includes 3 repositories:
 1.	https://github.com/Digimarket-open-source/DigiMarket_BackendDotNet 
 2.	https://github.com/Digimarket-open-source/DigiMarket_FrontEnd
 3.	https://github.com/Digimarket-open-source/DigiMarket_WebSocketHub
+
+Note: each one of the 3 repositories contain a coresponding technical ReadMe file.
+
+----------------------------------------------------------------------------------
+
+### Project partners:
+1.	Abacusan Stúdió Oktatásszervező Nonprofit Kft (Hungary) => http://abacusan.hu/
+2.	Kids Life Skills => www.kidslifeskills.org 
+3.	Obo => www.weteachrobotics.com 
+4.	Giving Hungary Foundation
+5.	M-Around => www.maround.hu
+6.	ELTE - University => https://www.barczi.elte.hu/en/ 
+
+----------------------------------------------------------------------------------
 
 ### Introduction:
 Welcome to our Digimarket project, designed specifically for kids! As the world continues to shift towards digital learning, it is more important than ever to provide high-quality educational resources that are both engaging and accessible. Our platform aims to do just that, offering a fun and interactive way for children to learn and grow from the comfort of their own homes while simulating the in-person classroom experience as much as possible.
