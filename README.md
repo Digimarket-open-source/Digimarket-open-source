@@ -12,7 +12,7 @@ https://sites.google.com/kidslifeskills.org/digimarket-project-kls/home
 
 ----------------------------------------------------------------------------------
 
-### The project includes 3 repositories:
+### The project includes 3 code containing repositories:
 1.	https://github.com/Digimarket-open-source/DigiMarket_BackendDotNet 
 2.	https://github.com/Digimarket-open-source/DigiMarket_FrontEnd
 3.	https://github.com/Digimarket-open-source/DigiMarket_WebSocketHub
